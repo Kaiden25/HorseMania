@@ -204,7 +204,7 @@
                <children>
                   <Label text="name:" />
                   <Label text="Label" GridPane.columnIndex="1" />
-                  <Label text="Label" GridPane.rowIndex="1" />
+                  <Label text="wager:" GridPane.rowIndex="1" />
                   <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
             </GridPane>
