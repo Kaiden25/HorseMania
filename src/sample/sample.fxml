@@ -14,7 +14,7 @@
     <center>
         <GridPane alignment="center" hgap="15.0" minHeight="550.0" minWidth="900.0" vgap="15.0" BorderPane.alignment="CENTER">
          <children>
-            <Label prefHeight="21.0" prefWidth="186.0" text="Label 1" />
+            <Label prefHeight="53.0" prefWidth="72.0" text="Label 1" />
             <Label text="Label 2" GridPane.columnIndex="1" />
             <Label text="Label 3" GridPane.columnIndex="2" />
             <Label text=" Label 4" GridPane.rowIndex="1" />
@@ -28,14 +28,14 @@
             <Insets />
          </BorderPane.margin>
          <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" />
-            <RowConstraints maxHeight="51.0" minHeight="22.0" prefHeight="22.0" />
-            <RowConstraints maxHeight="29.0" minHeight="0.0" prefHeight="29.0" />
+            <RowConstraints maxHeight="140.0" minHeight="140.0" prefHeight="140.0" />
+            <RowConstraints maxHeight="140.0" minHeight="140.0" prefHeight="140.0" />
+            <RowConstraints maxHeight="140.0" minHeight="140.0" prefHeight="140.0" />
          </rowConstraints>
          <columnConstraints>
-            <ColumnConstraints maxWidth="94.0" minWidth="10.0" prefWidth="72.0" />
-            <ColumnConstraints maxWidth="113.0" minWidth="54.0" prefWidth="95.0" />
-            <ColumnConstraints maxWidth="94.0" minWidth="10.0" prefWidth="81.0" />
+            <ColumnConstraints minWidth="200.0" />
+            <ColumnConstraints maxWidth="113.0" minWidth="200.0" prefWidth="95.0" />
+            <ColumnConstraints maxWidth="94.0" minWidth="225.0" prefWidth="81.0" />
          </columnConstraints></GridPane>
     </center>
     <top>
