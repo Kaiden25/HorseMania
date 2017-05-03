@@ -5,13 +5,38 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 
 <BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <center>
-        <GridPane alignment="center" hgap="10" vgap="10">
-        </GridPane>
+        <GridPane alignment="center" hgap="15.0" minHeight="550.0" minWidth="900.0" vgap="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="21.0" prefWidth="186.0" text="Label 1" />
+            <Label text="Label 2" GridPane.columnIndex="1" />
+            <Label text="Label 3" GridPane.columnIndex="2" />
+            <Label text=" Label 4" GridPane.rowIndex="1" />
+            <Label prefHeight="21.0" prefWidth="119.0" text="Label 5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Label 6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="Label 7" GridPane.rowIndex="2" />
+            <Label text="Label 8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Label 9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="51.0" minHeight="22.0" prefHeight="22.0" />
+            <RowConstraints maxHeight="29.0" minHeight="0.0" prefHeight="29.0" />
+         </rowConstraints>
+         <columnConstraints>
+            <ColumnConstraints maxWidth="94.0" minWidth="10.0" prefWidth="72.0" />
+            <ColumnConstraints maxWidth="113.0" minWidth="54.0" prefWidth="95.0" />
+            <ColumnConstraints maxWidth="94.0" minWidth="10.0" prefWidth="81.0" />
+         </columnConstraints></GridPane>
     </center>
     <top>
         <HBox prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER_LEFT">
