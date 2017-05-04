@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
    <center>
       <GridPane alignment="center" hgap="10" vgap="10">
          <children>
@@ -31,7 +31,7 @@
                      </font>
                   </Label>
                   <Label layoutX="466.0" layoutY="417.0" text="Press the ANY Bottom to proceed" />
-                  <Pane opacity="0.0" prefHeight="600.0" prefWidth="900.0" />
+                  <Pane onMouseClicked="#goToBank" opacity="0.0" prefHeight="600.0" prefWidth="900.0" />
                </children>
             </Pane>
          </children>
