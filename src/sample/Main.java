@@ -30,9 +30,19 @@ public class Main extends Application {
     }
 
     @FXML
-    public void goToFirstScreen(MouseEvent arg0) {
+    public void goToRaceSelection(MouseEvent arg0) {
         try{
-            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("main.fxml")), 900, 600));
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("race_selection.fxml")), 900, 600));
+        }
+        catch (Exception ex){
+
+        }
+    }
+
+    @FXML
+    public void goToHorseSelection(MouseEvent arg0) {
+        try{
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
         catch (Exception ex){
 
@@ -53,16 +63,6 @@ public class Main extends Application {
     public void goToBank(Event arg0) {
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("bank.fxml")), 900, 600));
-        }
-        catch (Exception ex){
-
-        }
-    }
-
-    @FXML
-    public void goToHorseSelection(MouseEvent arg0) {
-        try{
-            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
         catch (Exception ex){
 
