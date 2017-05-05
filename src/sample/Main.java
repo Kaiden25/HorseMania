@@ -46,8 +46,7 @@ public class Main extends Application {
     @FXML
     public void goToRaceSelection(Event arg0) {
         try{
-            //            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("race_selection.fxml")), 900, 600));
-            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("statistic.fxml")), 900, 600));
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("race_selection.fxml")), 900, 600));
         }
         catch (Exception ex){
 

@@ -10,54 +10,54 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
     <center>
         <GridPane alignment="center" hgap="15.0" minHeight="550.0" minWidth="900.0" style="-fx-background-color: #ecf9f2;" vgap="15.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="126.0" fitWidth="267.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="140.0" fitWidth="241.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horse_one.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="161.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horse_two.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="132.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+            <ImageView fitHeight="159.0" fitWidth="227.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horse_three.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="140.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horse_four.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="140.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horse_five.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="140.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horse_six.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="140.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horse_seven.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="140.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <ImageView fitHeight="140.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horse_eight.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="140.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horse_nine.png" />
                </image>
             </ImageView>
          </children>
