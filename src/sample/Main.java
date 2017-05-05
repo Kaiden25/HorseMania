@@ -34,6 +34,7 @@ public class Main extends Application {
     private static Stage PrimaryStage;
 
     private int currentMoney = 1000;
+    private int moneyOnBank = 2000;
 
     @FXML private TextField moneyToDeposit;
     @FXML private Label currentMoneyLabel;
@@ -92,9 +93,19 @@ public class Main extends Application {
 
     @FXML
     public void depositMoney(Event arg0){
-        //Show Dialog horse selected
-        //JOptionPane.showMessageDialog(null, moneyToDeposit.getText(), "Money Disposited", JOptionPane.INFORMATION_MESSAGE);
-        currentMoneyLabel.setText(moneyToDeposit.getText());
+        try {
+            Integer i = Integer.parseInt(moneyToDeposit.getText());
+            if(currentMoney < i)
+                JOptionPane.showMessageDialog(null, "Sorry, but you don't have that much money to deposit...", "You don't have that much money", JOptionPane.INFORMATION_MESSAGE);
+            else{
+                moneyOnBank = moneyOnBank + i;
+                currentMoney = currentMoney - i;
+                currentMoneyLabel.setText(String.valueOf(currentMoney));
+            }
+        }
+        catch (Exception ex){
+            JOptionPane.showMessageDialog(null, "Please just enter full numbers", "Incorrect input", JOptionPane.INFORMATION_MESSAGE);
+        }
     }
 
     @FXML
