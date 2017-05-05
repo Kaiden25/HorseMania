@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
     <center>
         <GridPane alignment="center" hgap="15.0" minHeight="550.0" minWidth="900.0" vgap="15.0" BorderPane.alignment="CENTER">
          <children>
@@ -103,12 +103,20 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </padding>
                 </Label>
-            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#goToBank">
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="375.0" right="10.0" top="12.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#goToBank" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/Bank_money.png" />
                </image>
                <HBox.margin>
-                  <Insets bottom="10.0" left="425.0" right="10.0" top="10.0" />
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
             </ImageView>
             <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
@@ -119,7 +127,7 @@
                   <Image url="@../images/ranking_list.png" />
                </image>
             </ImageView>
-                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false" onMouseClicked="#goToSettings">
+                <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#goToSettings" pickOnBounds="true" smooth="false">
                     <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </HBox.margin>
