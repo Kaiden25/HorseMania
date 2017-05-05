@@ -135,5 +135,7 @@ public class Main extends Application {
     private void initialize(){
         if(currentMoneyLabel != null)
             currentMoneyLabel.setText(String.valueOf(currentMoney));
+        if(moneyOnBankLabel != null)
+            moneyOnBankLabel.setText(String.valueOf(moneyOnBank));
     }
 }
