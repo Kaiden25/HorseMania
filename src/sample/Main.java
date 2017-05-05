@@ -8,8 +8,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javax.swing.*;
+import java.io.File;
 
 /**
  * Main Class.
@@ -151,6 +154,7 @@ public class Main extends Application {
     private void initialize(){
         if(currentMoneyLabel != null)
             currentMoneyLabel.setText(String.valueOf(currentMoney));
+        else playMusic();
         if(moneyOnBankLabel != null)
             moneyOnBankLabel.setText(String.valueOf(moneyOnBank));
         if(statsLabel1 != null)
@@ -162,5 +166,14 @@ public class Main extends Application {
     private void addStats(String key, String value){
         stats1 = stats1 + "\n" + key;
         stats2 = stats2 + "\n" + value;
+    }
+
+    private void playMusic(){
+        File f = new File("Soundtrack/Theme.mp3");
+        if(f.exists()){
+            Media hit = new Media(f.toURI().toString());
+            MediaPlayer mediaPlayer = new MediaPlayer(hit);
+            mediaPlayer.play();
+        }
     }
 }
