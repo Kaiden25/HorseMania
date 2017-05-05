@@ -110,6 +110,7 @@ public class Main extends Application {
                 moneyOnBank = moneyOnBank + i;
                 currentMoney = currentMoney - i;
                 currentMoneyLabel.setText(String.valueOf(currentMoney));
+                addStats("Deposited money:", String.valueOf(i));
             }
         }
         catch (Exception ex){
@@ -127,6 +128,7 @@ public class Main extends Application {
                 currentMoney = currentMoney + i;
                 moneyOnBank = moneyOnBank - i;
                 currentMoneyLabel.setText(String.valueOf(currentMoney));
+                addStats("Withdrawn money:", String.valueOf(i));
             }
         }
         catch (Exception ex){
@@ -144,5 +146,10 @@ public class Main extends Application {
             statsLabel1.setText(stats1);
         if(statsLabel2 != null)
             statsLabel2.setText(stats2);
+    }
+
+    private void addStats(String key, String value){
+        stats1 = stats1 + "\n" + key;
+        stats2 = stats2 + "\n" + value;
     }
 }
