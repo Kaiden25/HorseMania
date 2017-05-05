@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 
-<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
     <center>
         <Pane style="-fx-background-color: #ecf9f2;">
             <children>
@@ -16,7 +16,7 @@
                     <image>
                         <Image url="@../images/finish.png" />
                     </image></ImageView>
-                <Label fx:id="statsLabel2" layoutX="161.0" layoutY="72.0" text="No Stats found" />
+                <Label fx:id="statsLabel2" layoutX="205.0" layoutY="72.0" text="No Stats found" textAlignment="RIGHT" />
                 <Label layoutX="53.0" layoutY="32.0" text="Statistics:" underline="true" />
                 <Label fx:id="statsLabel1" layoutX="53.0" layoutY="72.0" />
             </children></Pane>
