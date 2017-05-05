@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 
-<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
     <center>
       <Pane style="-fx-background-color: #ecf9f2;">
          <children>
@@ -28,7 +28,7 @@
             <Separator layoutX="120.0" layoutY="436.0" orientation="VERTICAL" prefHeight="57.0" prefWidth="0.0" />
             <Label layoutX="149.0" layoutY="431.0" text="005" />
             <Label layoutX="149.0" layoutY="472.0" text="001" />
-            <Label layoutX="83.0" layoutY="128.0" prefHeight="21.0" prefWidth="496.0" text="example 2 example 2 example 2 example 2 example 2 example 2 example 2 " />
+            <Label id="sample" layoutX="83.0" layoutY="128.0" prefHeight="21.0" prefWidth="496.0" text="example 2 example 2 example 2 example 2 example 2 example 2 example 2 " />
             <Label layoutX="263.0" layoutY="431.0" text="Profit:" />
             <Label layoutX="265.0" layoutY="472.0" text="Loss:" />
             <Label layoutX="359.0" layoutY="431.0" text="2000" />
