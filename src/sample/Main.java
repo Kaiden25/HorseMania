@@ -6,32 +6,44 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import javax.swing.*;
+import java.util.Random;
 
+/**
+ * Main Class.
+ * Serves as the Controller for the whole application.
+ * **/
 public class Main extends Application {
 
-    Parent root;
     @Override
     public void start(Stage primaryStage) throws Exception{
-        root = FXMLLoader.load(getClass().getResource("start.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("start.fxml"));
         primaryStage.setTitle("Horse Simulator");
         primaryStage.setScene(new Scene(root, 900, 600));
         primaryStage.setResizable(false);
         primaryStage.show();
         PrimaryStage = primaryStage;
-
+        currentMoneyLabel = new Label();
+        currentMoneyLabel.setText("345");
     }
 
+    /*Properties*/
     private static Stage PrimaryStage;
 
+    private int currentMoney = 1000;
+
+    @FXML private TextField moneyToDeposit;
+    @FXML private Label currentMoneyLabel;
 
     public static void main(String[] args) {
         launch(args);
     }
 
+    /*Functions*/
     @FXML
     public void goToRaceSelection(Event arg0) {
         try{
@@ -76,7 +88,23 @@ public class Main extends Application {
     public void selectHorse(Event arg0){
         //Show Dialog horse selected
         JOptionPane.showMessageDialog(null, "You selected a Horse", "Horse selected!", JOptionPane.INFORMATION_MESSAGE);
-
         goToRaceSelection(null);
+        int random = (int)(Math.random()*100);
+        if(random > 50){
+            JOptionPane.showMessageDialog(null, "The Horse you selected has won", "Your Horse won!!!", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+
+    @FXML
+    public void depositMoney(Event arg0){
+        //Show Dialog horse selected
+        //JOptionPane.showMessageDialog(null, moneyToDeposit.getText(), "Money Disposited", JOptionPane.INFORMATION_MESSAGE);
+        currentMoneyLabel.setText(moneyToDeposit.getText());
+    }
+
+    @FXML
+    private void initialize(){
+        if(currentMoneyLabel != null)
+            currentMoneyLabel.setText(String.valueOf(currentMoney));
     }
 }
