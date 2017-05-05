@@ -14,19 +14,19 @@
     <center>
         <GridPane alignment="center" hgap="15.0" minHeight="550.0" minWidth="900.0" style="-fx-background-color: #ecf9f2;" vgap="15.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="126.0" fitWidth="248.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="126.0" fitWidth="267.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horsy,jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="161.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horsy,jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="132.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                <image>
-                  <Image url="@../images/horsy.jpg" />
+                  <Image url="@../images/horsy,jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="140.0" fitWidth="225.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
