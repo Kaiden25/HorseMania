@@ -30,7 +30,7 @@ public class Main extends Application {
     }
 
     @FXML
-    public void goToRaceSelection(MouseEvent arg0) {
+    public void goToRaceSelection(Event arg0) {
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("race_selection.fxml")), 900, 600));
         }
@@ -40,7 +40,7 @@ public class Main extends Application {
     }
 
     @FXML
-    public void goToHorseSelection(MouseEvent arg0) {
+    public void goToHorseSelection(Event arg0) {
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
@@ -50,7 +50,7 @@ public class Main extends Application {
     }
 
     @FXML
-    public void goToSettings(MouseEvent arg0) {
+    public void goToSettings(Event arg0) {
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("settings.fxml")), 900, 600));
         }

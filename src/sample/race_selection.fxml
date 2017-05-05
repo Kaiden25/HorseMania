@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
     <center>
         <GridPane alignment="center" hgap="15.0" minHeight="550.0" minWidth="900.0" style="-fx-background-color: ..\images\horsy.jpg;" vgap="15.0" BorderPane.alignment="CENTER">
          <children>
-            <GridPane style="-fx-background-color: #E6E6E6;">
+            <GridPane onMouseClicked="#goToHorseSelection" style="-fx-background-color: #E6E6E6;">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -43,7 +43,7 @@
                   <Label text="11:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="1">
+            <GridPane onMouseClicked="#goToHorseSelection" style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="1">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -86,7 +86,7 @@
                   </Label>
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="2">
+            <GridPane onMouseClicked="#goToHorseSelection" style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="2">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -114,7 +114,7 @@
                   <Label text="13:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="1">
+            <GridPane onMouseClicked="#goToHorseSelection" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -142,7 +142,7 @@
                   <Label text="14:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane onMouseClicked="#goToHorseSelection" style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="1" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -170,7 +170,7 @@
                   <Label text="14:15" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <GridPane onMouseClicked="#goToHorseSelection" style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="2" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -198,7 +198,7 @@
                   <Label text="14:45" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="2">
+            <GridPane onMouseClicked="#goToHorseSelection" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="2">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -226,7 +226,7 @@
                   <Label text="15:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane onMouseClicked="#goToHorseSelection" style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="1" GridPane.rowIndex="2">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -254,7 +254,7 @@
                      </GridPane.margin></Label>
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <GridPane onMouseClicked="#goToHorseSelection" style="-fx-background-color: #E6E6E6;" GridPane.columnIndex="2" GridPane.rowIndex="2">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -316,7 +316,7 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </padding>
                 </Label>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#goToRaceSelection">
+            <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goToRaceSelection" pickOnBounds="true" preserveRatio="true">
                <HBox.margin>
                   <Insets bottom="10.0" left="375.0" right="10.0" top="12.0" />
                </HBox.margin>
