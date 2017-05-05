@@ -20,7 +20,7 @@
                </image>
             </ImageView>
             <Label prefHeight="53.0" prefWidth="72.0" text="Label 1" />
-            <ImageView fitHeight="122.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+            <ImageView fitHeight="122.0" fitWidth="200.0" onMouseClicked="#selectHorse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                <image>
                   <Image url="@../images/horsy.jpg" />
                </image>

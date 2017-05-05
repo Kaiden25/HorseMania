@@ -9,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import javax.swing.*;
+
 public class Main extends Application {
 
     Parent root;
@@ -72,6 +74,7 @@ public class Main extends Application {
     @FXML
     public void selectHorse(Event arg0){
         //Show Dialog horse selected
+        JOptionPane.showMessageDialog(null, "You selected a Horse", "Horse selected!", JOptionPane.INFORMATION_MESSAGE);
 
         goToRaceSelection(null);
     }
