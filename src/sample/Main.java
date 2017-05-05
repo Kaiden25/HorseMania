@@ -27,15 +27,17 @@ public class Main extends Application {
         primaryStage.setResizable(false);
         primaryStage.show();
         PrimaryStage = primaryStage;
+        stats1 = "Start:";
+        stats2 = String.valueOf(currentMoney);
     }
 
     /*Properties*/
     private static Stage PrimaryStage;
 
-    private int currentMoney = 1000;
-    private int moneyOnBank = 2000;
-    private String stats1 = "Start:";
-    private String stats2 = "1000";
+    private static int currentMoney = 1000;
+    private static int moneyOnBank = 2000;
+    private static String stats1;
+    private static String stats2;
 
     @FXML private TextField moneyToDeposit;
     @FXML private Label moneyOnBankLabel;
@@ -90,6 +92,16 @@ public class Main extends Application {
     }
 
     @FXML
+    public void goToStats(Event arg0) {
+        try{
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("statistic.fxml")), 900, 600));
+        }
+        catch (Exception ex){
+
+        }
+    }
+
+    @FXML
     public void selectHorse(Event arg0){
         //Show Dialog horse selected
         JOptionPane.showMessageDialog(null, "You selected a Horse", "Horse selected!", JOptionPane.INFORMATION_MESSAGE);
@@ -110,7 +122,7 @@ public class Main extends Application {
                 moneyOnBank = moneyOnBank + i;
                 currentMoney = currentMoney - i;
                 currentMoneyLabel.setText(String.valueOf(currentMoney));
-                addStats("Deposited money:", String.valueOf(i));
+                addStats("Deposited money:", "- " + String.valueOf(i));
             }
         }
         catch (Exception ex){
@@ -128,7 +140,7 @@ public class Main extends Application {
                 currentMoney = currentMoney + i;
                 moneyOnBank = moneyOnBank - i;
                 currentMoneyLabel.setText(String.valueOf(currentMoney));
-                addStats("Withdrawn money:", String.valueOf(i));
+                addStats("Withdrawn money:", "+ " + String.valueOf(i));
             }
         }
         catch (Exception ex){
