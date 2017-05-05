@@ -22,15 +22,9 @@
                         <Rectangle2D />
                      </viewport>
                      <image>
-                        <Image url="@../images/Crippled_Horse.jpg" />
+                        <Image url="@../images/Splashscreen.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="231.0" layoutY="222.0" text="HorseMania!">
-                     <font>
-                        <Font name="Bauhaus 93" size="36.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="466.0" layoutY="417.0" text="Press the ANY Bottom to proceed" />
                   <Pane onMouseClicked="#goToRaceSelection" opacity="0.0" prefHeight="600.0" prefWidth="900.0" />
                </children>
             </Pane>
