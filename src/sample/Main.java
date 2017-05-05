@@ -38,6 +38,7 @@ public class Main extends Application {
     private int moneyOnBank = 2000;
 
     @FXML private TextField moneyToDeposit;
+    @FXML private Label moneyOnBankLabel;
     @FXML private Label currentMoneyLabel;
 
     public static void main(String[] args) {
@@ -105,6 +106,23 @@ public class Main extends Application {
             else{
                 moneyOnBank = moneyOnBank + i;
                 currentMoney = currentMoney - i;
+                currentMoneyLabel.setText(String.valueOf(currentMoney));
+            }
+        }
+        catch (Exception ex){
+            JOptionPane.showMessageDialog(null, "Please just enter full numbers", "Incorrect input", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+
+    @FXML
+    public void withdrawMoney(Event arg0){
+        try {
+            Integer i = Integer.parseInt(moneyToDeposit.getText());
+            if(moneyOnBank < i)
+                JOptionPane.showMessageDialog(null, "Sorry, but you don't have that much money to withdraw...", "You don't have that much money", JOptionPane.INFORMATION_MESSAGE);
+            else{
+                currentMoney = currentMoney + i;
+                moneyOnBank = moneyOnBank - i;
                 currentMoneyLabel.setText(String.valueOf(currentMoney));
             }
         }
