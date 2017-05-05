@@ -68,4 +68,11 @@ public class Main extends Application {
 
         }
     }
+
+    @FXML
+    public void selectHorse(Event arg0){
+        //Show Dialog horse selected
+
+        goToRaceSelection(null);
+    }
 }
