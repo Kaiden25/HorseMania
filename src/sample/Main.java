@@ -17,8 +17,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         root = FXMLLoader.load(getClass().getResource("start.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Horse Simulator");
         primaryStage.setScene(new Scene(root, 900, 600));
+        primaryStage.setResizable(false);
         primaryStage.show();
         PrimaryStage = primaryStage;
 
