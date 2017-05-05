@@ -11,6 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import javax.swing.*;
+import java.util.Random;
 
 /**
  * Main Class.
@@ -89,6 +90,10 @@ public class Main extends Application {
         //Show Dialog horse selected
         JOptionPane.showMessageDialog(null, "You selected a Horse", "Horse selected!", JOptionPane.INFORMATION_MESSAGE);
         goToRaceSelection(null);
+        int random = (int)(Math.random()*100);
+        if(random > 50){
+            JOptionPane.showMessageDialog(null, "The Horse you selected has won", "Your Horse won!!!", JOptionPane.INFORMATION_MESSAGE);
+        }
     }
 
     @FXML
