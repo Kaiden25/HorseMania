@@ -119,6 +119,7 @@ public class Main extends Application {
                 moneyOnBank = moneyOnBank + i;
                 currentMoney = currentMoney - i;
                 currentMoneyLabel.setText(String.valueOf(currentMoney));
+                moneyOnBankLabel.setText(String.valueOf(moneyOnBank));
                 addStats("Deposited money:", "- " + String.valueOf(i));
             }
         }
@@ -137,6 +138,7 @@ public class Main extends Application {
                 currentMoney = currentMoney + i;
                 moneyOnBank = moneyOnBank - i;
                 currentMoneyLabel.setText(String.valueOf(currentMoney));
+                moneyOnBankLabel.setText(String.valueOf(moneyOnBank));
                 addStats("Withdrawn money:", "+ " + String.valueOf(i));
             }
         }
