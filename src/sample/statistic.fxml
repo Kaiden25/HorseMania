@@ -2,43 +2,23 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 
-<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
     <center>
       <Pane style="-fx-background-color: #ecf9f2;">
          <children>
-            <Label layoutX="86.0" layoutY="40.0" prefHeight="21.0" prefWidth="80.0" text="Race name:" />
-            <Label layoutX="236.0" layoutY="40.0" text="cost:" />
-            <Label layoutX="367.0" layoutY="40.0" prefHeight="21.0" prefWidth="53.0" text="Result:" />
-            <Label layoutX="508.0" layoutY="40.0" text="win/loss:" />
-            <Separator layoutX="85.0" layoutY="74.0" prefHeight="1.0" prefWidth="489.0" />
-            <Label layoutX="86.0" layoutY="87.0" prefHeight="21.0" prefWidth="82.0" text="P.One" />
-            <Label layoutX="239.0" layoutY="88.0" text="100" />
-            <Label layoutX="367.0" layoutY="87.0" text="WIN!" />
-            <Label layoutX="508.0" layoutY="88.0" text="500" />
-            <Label layoutX="44.0" layoutY="431.0" text="All Wins:" />
-            <Label layoutX="41.0" layoutY="472.0" text="All losses:" />
-            <Separator layoutX="41.0" layoutY="463.0" prefHeight="0.0" prefWidth="142.0" />
-            <Separator layoutX="120.0" layoutY="436.0" orientation="VERTICAL" prefHeight="57.0" prefWidth="0.0" />
-            <Label layoutX="149.0" layoutY="431.0" text="005" />
-            <Label layoutX="149.0" layoutY="472.0" text="001" />
-            <Label layoutX="83.0" layoutY="128.0" prefHeight="21.0" prefWidth="496.0" text="example 2 example 2 example 2 example 2 example 2 example 2 example 2 " />
-            <Label layoutX="263.0" layoutY="431.0" text="Profit:" />
-            <Label layoutX="265.0" layoutY="472.0" text="Loss:" />
-            <Label layoutX="359.0" layoutY="431.0" text="2000" />
-            <Label layoutX="363.0" layoutY="472.0" text="500" />
-            <Separator layoutX="259.0" layoutY="465.0" prefHeight="0.0" prefWidth="140.0" />
-            <Separator layoutX="331.0" layoutY="438.0" orientation="VERTICAL" prefHeight="55.0" prefWidth="3.0" />
-            <ImageView fitHeight="229.0" fitWidth="355.0" layoutX="500.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="362.0" fitWidth="488.0" layoutX="359.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/finish.png" />
                </image></ImageView>
+            <Label fx:id="statsLabel2" layoutX="138.0" layoutY="72.0" text="No Stats found" />
+            <Label layoutX="53.0" layoutY="32.0" text="Statistics:" />
+            <Label fx:id="statsLabel1" layoutX="53.0" layoutY="72.0" />
          </children></Pane>
     </center>
     <top>

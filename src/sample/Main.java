@@ -27,8 +27,6 @@ public class Main extends Application {
         primaryStage.setResizable(false);
         primaryStage.show();
         PrimaryStage = primaryStage;
-        currentMoneyLabel = new Label();
-        currentMoneyLabel.setText("345");
     }
 
     /*Properties*/
@@ -36,10 +34,15 @@ public class Main extends Application {
 
     private int currentMoney = 1000;
     private int moneyOnBank = 2000;
+    private String stats1 = "Start:";
+    private String stats2 = "1000";
 
     @FXML private TextField moneyToDeposit;
     @FXML private Label moneyOnBankLabel;
     @FXML private Label currentMoneyLabel;
+    @FXML private Label statsLabel1;
+    @FXML private Label statsLabel2;
+
 
     public static void main(String[] args) {
         launch(args);
@@ -137,5 +140,9 @@ public class Main extends Application {
             currentMoneyLabel.setText(String.valueOf(currentMoney));
         if(moneyOnBankLabel != null)
             moneyOnBankLabel.setText(String.valueOf(moneyOnBank));
+        if(statsLabel1 != null)
+            statsLabel1.setText(stats1);
+        if(statsLabel2 != null)
+            statsLabel2.setText(stats2);
     }
 }
