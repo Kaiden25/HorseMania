@@ -23,7 +23,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
        // Parent root = FXMLLoader.load(getClass().getResource("start.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("race_selection.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("start.fxml"));
         primaryStage.setTitle("Horse Simulator");
         primaryStage.setScene(new Scene(root, 900, 600));
         primaryStage.setResizable(false);
@@ -31,6 +31,7 @@ public class Main extends Application {
         PrimaryStage = primaryStage;
         stats1 = "Start:";
         stats2 = String.valueOf(currentMoney);
+        wager = 100;
     }
 
     /*Properties*/
@@ -40,22 +41,13 @@ public class Main extends Application {
     private static int moneyOnBank = 2000;
     private static String stats1;
     private static String stats2;
-    private int wager;
+    private static int wager;
 
     @FXML private TextField moneyToDeposit;
     @FXML private Label moneyOnBankLabel;
     @FXML private Label currentMoneyLabel;
     @FXML private Label statsLabel1;
     @FXML private Label statsLabel2;
-    @FXML private GridPane wager1;
-    @FXML private GridPane wager2;
-    @FXML private GridPane wager3;
-    @FXML private GridPane wager4;
-    @FXML private GridPane wager5;
-    @FXML private GridPane wager6;
-    @FXML private GridPane wager7;
-    @FXML private GridPane wager8;
-    @FXML private GridPane wager9;
 
 
     public static void main(String[] args) {
@@ -74,8 +66,122 @@ public class Main extends Application {
     }
 
     @FXML
-    public void goToHorseSelection(Event arg0) {
-        currentMoney = currentMoney - wager();
+    public void goToHorseSelection1(Event arg0) {
+        // set the wager to the race corrresponding amount
+        setWager(100);
+        currentMoney = currentMoney - wager;
+        currentMoneyLabel.setText(String.valueOf(currentMoney));
+        try{
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
+        }
+        catch (Exception ex){
+
+        }
+    }
+
+    @FXML
+    public void goToHorseSelection2(Event arg0) {
+        // set the wager to the race corrresponding amount
+        setWager(200);
+        currentMoney = currentMoney - wager;
+        currentMoneyLabel.setText(String.valueOf(currentMoney));
+        try{
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
+        }
+        catch (Exception ex){
+
+        }
+    }
+
+    @FXML
+    public void goToHorseSelection3(Event arg0) {
+        // set the wager to the race corrresponding amount
+        setWager(300);
+        currentMoney = currentMoney - wager;
+        currentMoneyLabel.setText(String.valueOf(currentMoney));
+        try{
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
+        }
+        catch (Exception ex){
+
+        }
+    }
+
+    @FXML
+    public void goToHorseSelection4(Event arg0) {
+        // set the wager to the race corrresponding amount
+        setWager(400);
+        currentMoney = currentMoney - wager;
+        currentMoneyLabel.setText(String.valueOf(currentMoney));
+        try{
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
+        }
+        catch (Exception ex){
+
+        }
+    }
+
+    @FXML
+    public void goToHorseSelection5(Event arg0) {
+        // set the wager to the race corrresponding amount
+        setWager(500);
+        currentMoney = currentMoney - wager;
+        currentMoneyLabel.setText(String.valueOf(currentMoney));
+        try{
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
+        }
+        catch (Exception ex){
+
+        }
+    }
+
+    @FXML
+    public void goToHorseSelection6(Event arg0) {
+        // set the wager to the race corrresponding amount
+        setWager(600);
+        currentMoney = currentMoney - wager;
+        currentMoneyLabel.setText(String.valueOf(currentMoney));
+        try{
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
+        }
+        catch (Exception ex){
+
+        }
+    }
+
+    @FXML
+    public void goToHorseSelection7(Event arg0) {
+        // set the wager to the race corrresponding amount
+        setWager(700);
+        currentMoney = currentMoney - wager;
+        currentMoneyLabel.setText(String.valueOf(currentMoney));
+        try{
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
+        }
+        catch (Exception ex){
+
+        }
+    }
+
+    @FXML
+    public void goToHorseSelection8(Event arg0) {
+        // set the wager to the race corrresponding amount
+        setWager(800);
+        currentMoney = currentMoney - wager;
+        currentMoneyLabel.setText(String.valueOf(currentMoney));
+        try{
+            PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
+        }
+        catch (Exception ex){
+
+        }
+    }
+
+    @FXML
+    public void goToHorseSelection9(Event arg0) {
+        // set the wager to the race corrresponding amount
+        setWager(900);
+        currentMoney = currentMoney - wager;
         currentMoneyLabel.setText(String.valueOf(currentMoney));
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
@@ -123,10 +229,14 @@ public class Main extends Application {
         // Get a random number between 1 and 100
         int random = (int)(Math.random()*100);
         // See i random number is above 50, if it is you win
-        if(random > 50){
+        if(random > 1){
             JOptionPane.showMessageDialog(null, "The Horse you selected has won", "Your Horse won!!!", JOptionPane.INFORMATION_MESSAGE);
+            // Checks if wager isch set if it isn't wager is set to 100
+            if (wager == 0){
+                setWager(100);
+            }
             // Add payout at odds of 1:2 to currentMoney
-            currentMoney = currentMoney + (wager * 2);
+            currentMoney = (currentMoney + (wager * 2));
             currentMoneyLabel.setText(String.valueOf(currentMoney));
         }
     }
@@ -194,45 +304,6 @@ public class Main extends Application {
             MediaPlayer mediaPlayer = new MediaPlayer(hit);
             mediaPlayer.play();
         }
-    }
-
-    public int wager(){
-        if (wager1 != null) {
-            setWager(100);
-            if (wager2 != null) {
-                setWager(200);
-                if (wager3 != null) {
-                    setWager(300);
-                    if (wager4 != null) {
-                        setWager(400);
-                        if (wager5 != null) {
-                            setWager(500);
-                            if (wager6 != null) {
-                                setWager(600);
-                                if (wager7 != null) {
-                                    setWager(700);
-                                    if (wager8 != null) {
-                                        setWager(800);
-                                        if (wager9 != null) {
-                                            setWager(900);
-                                        }
-                                        return wager;
-                                    }
-                                    return wager;
-                                }
-                                return wager;
-                            }
-                            return wager;
-                        }
-                        return wager;
-                    }
-                    return wager;
-                }
-                return wager;
-            }
-            return wager;
-        }
-        return wager;
     }
 
     public void setWager(int wager) {
