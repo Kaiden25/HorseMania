@@ -201,8 +201,11 @@ public class Main extends Application {
             // Add payout at odds of 1:2 to currentMoney
             currentMoney = (currentMoney + (wager * 2));
             currentMoneyLabel.setText(String.valueOf(currentMoney));
+            addStats("Bet won", "+ " + String.valueOf(wager));
+            wager = 0;
         }
         else{
+            addStats("Bet lost", "- " + String.valueOf(wager));
             JOptionPane.showMessageDialog(null, "The Horse you selected has lost", "Your Horse lost", JOptionPane.INFORMATION_MESSAGE);
         }
         goToRaceSelection(null);
