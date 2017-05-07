@@ -69,78 +69,56 @@ public class Main extends Application {
     public void goToHorseSelection1(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(100);
-        currentMoney = currentMoney - wager;
-        currentMoneyLabel.setText(String.valueOf(currentMoney));
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
-        catch (Exception ex){
-
-        }
+        catch (Exception ex){}
     }
 
     @FXML
     public void goToHorseSelection2(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(200);
-        currentMoney = currentMoney - wager;
-        currentMoneyLabel.setText(String.valueOf(currentMoney));
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
-        catch (Exception ex){
-
-        }
+        catch (Exception ex){}
     }
 
     @FXML
     public void goToHorseSelection3(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(300);
-        currentMoney = currentMoney - wager;
-        currentMoneyLabel.setText(String.valueOf(currentMoney));
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
-        catch (Exception ex){
-
-        }
+        catch (Exception ex){}
     }
 
     @FXML
     public void goToHorseSelection4(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(400);
-        currentMoney = currentMoney - wager;
-        currentMoneyLabel.setText(String.valueOf(currentMoney));
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
-        catch (Exception ex){
-
-        }
+        catch (Exception ex){}
     }
 
     @FXML
     public void goToHorseSelection5(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(500);
-        currentMoney = currentMoney - wager;
-        currentMoneyLabel.setText(String.valueOf(currentMoney));
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
-        catch (Exception ex){
-
-        }
+        catch (Exception ex){}
     }
 
     @FXML
     public void goToHorseSelection6(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(600);
-        currentMoney = currentMoney - wager;
-        currentMoneyLabel.setText(String.valueOf(currentMoney));
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
@@ -153,42 +131,30 @@ public class Main extends Application {
     public void goToHorseSelection7(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(700);
-        currentMoney = currentMoney - wager;
-        currentMoneyLabel.setText(String.valueOf(currentMoney));
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
-        catch (Exception ex){
-
-        }
+        catch (Exception ex){}
     }
 
     @FXML
     public void goToHorseSelection8(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(800);
-        currentMoney = currentMoney - wager;
-        currentMoneyLabel.setText(String.valueOf(currentMoney));
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
-        catch (Exception ex){
-
-        }
+        catch (Exception ex){}
     }
 
     @FXML
     public void goToHorseSelection9(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(900);
-        currentMoney = currentMoney - wager;
-        currentMoneyLabel.setText(String.valueOf(currentMoney));
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("horse_selection.fxml")), 900, 600));
         }
-        catch (Exception ex){
-
-        }
+        catch (Exception ex){}
     }
 
     @FXML
@@ -223,9 +189,6 @@ public class Main extends Application {
 
     @FXML
     public void selectHorse(Event arg0){
-        //Show Dialog horse selected
-        JOptionPane.showMessageDialog(null, "You selected a Horse", "Horse selected!", JOptionPane.INFORMATION_MESSAGE);
-        goToRaceSelection(null);
         // Get a random number between 1 and 100
         int random = (int)(Math.random()*100);
         // See i random number is above 50, if it is you win
@@ -239,6 +202,10 @@ public class Main extends Application {
             currentMoney = (currentMoney + (wager * 2));
             currentMoneyLabel.setText(String.valueOf(currentMoney));
         }
+        else{
+            JOptionPane.showMessageDialog(null, "The Horse you selected has lost", "Your Horse lost", JOptionPane.INFORMATION_MESSAGE);
+        }
+        goToRaceSelection(null);
     }
 
     @FXML
@@ -308,5 +275,6 @@ public class Main extends Application {
 
     public void setWager(int wager) {
         this.wager = wager;
+        currentMoney = currentMoney - wager;
     }
 }
