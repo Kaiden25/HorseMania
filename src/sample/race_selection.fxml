@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
     <center>
         <GridPane alignment="center" hgap="15.0" minHeight="550.0" minWidth="900.0" style="-fx-background-color: #ecf9f2;" vgap="15.0">
          <children>
@@ -27,7 +27,7 @@
               </rowConstraints>
                <children>
                   <Label />
-                  <Label contentDisplay="CENTER" prefHeight="53.0" prefWidth="72.0" text="Name:">
+                  <Label contentDisplay="CENTER" prefHeight="47.0" prefWidth="132.0" text="Race One" GridPane.columnSpan="2">
                      <GridPane.margin>
                         <Insets left="15.0" />
                      </GridPane.margin>
@@ -45,7 +45,7 @@
                         <Insets left="15.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label text="One" textOverrun="CLIP" GridPane.columnIndex="1">
+                  <Label textOverrun="CLIP" GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font></Label>
@@ -64,7 +64,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Name:">
+                  <Label text="Race Two" GridPane.columnSpan="2">
                      <GridPane.margin>
                         <Insets left="15.0" />
                      </GridPane.margin>
@@ -72,7 +72,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label text="Two" GridPane.columnIndex="1">
+                  <Label GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
@@ -113,7 +113,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Name:">
+                  <Label prefHeight="27.0" prefWidth="192.0" text="Race Three" GridPane.columnSpan="2">
                      <GridPane.margin>
                         <Insets left="15.0" />
                      </GridPane.margin>
@@ -121,7 +121,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label text="Three" GridPane.columnIndex="1">
+                  <Label GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font></Label>
@@ -155,7 +155,7 @@
                         <Insets left="15.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label text="Name:">
+                  <Label text="Race Four" GridPane.columnSpan="2">
                       <GridPane.margin>
                         <Insets left="15.0" />
                      </GridPane.margin>
@@ -163,7 +163,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label text="Four" GridPane.columnIndex="1">
+                  <Label GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font></Label>
@@ -188,12 +188,15 @@
               </rowConstraints>
                <children>
                   <Label prefHeight="21.0" prefWidth="119.0" text="500" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label text="Name:">
+                  <Label text="Race Five" GridPane.columnSpan="2">
                      <GridPane.margin>
                         <Insets left="15.0" />
                      </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
                   </Label>
-                  <Label text="Five" GridPane.columnIndex="1">
+                  <Label GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font></Label>
@@ -226,7 +229,7 @@
                         <Insets left="15.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label text="Name:">
+                  <Label text="Race Six" GridPane.columnSpan="2">
                      <GridPane.margin>
                         <Insets left="15.0" />
                      </GridPane.margin>
@@ -234,7 +237,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label text="Six" GridPane.columnIndex="1">
+                  <Label GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font></Label>
@@ -258,7 +261,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Name:">
+                  <Label text="Race Seven" GridPane.columnSpan="2">
                      <GridPane.margin>
                         <Insets left="15.0" />
                      </GridPane.margin>
@@ -266,7 +269,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label text="Seven" GridPane.columnIndex="1">
+                  <Label GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font></Label>
@@ -296,7 +299,7 @@
               </rowConstraints>
                <children>
                   <Label text="16:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Label text="Name:">
+                  <Label text="Race Eight" GridPane.columnSpan="2">
                      <GridPane.margin>
                         <Insets left="15.0" />
                      </GridPane.margin>
@@ -304,7 +307,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label text="Eight" GridPane.columnIndex="1">
+                  <Label GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font></Label>
@@ -332,7 +335,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Name:">
+                  <Label text="Race Nine" GridPane.columnSpan="2">
                      <padding>
                         <Insets left="15.0" />
                      </padding>
@@ -340,7 +343,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label text="Nine" GridPane.columnIndex="1">
+                  <Label GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font></Label>
@@ -350,7 +353,7 @@
                      </padding>
                   </Label>
                   <Label text="900" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label text="Label" GridPane.rowIndex="2">
+                  <Label text="Beginning:" GridPane.rowIndex="2">
                      <padding>
                         <Insets left="15.0" />
                      </padding>
