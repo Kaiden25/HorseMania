@@ -14,383 +14,383 @@
 
 <BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
     <center>
-      <Pane>
-         <children>
-            <ImageView cache="true" fitHeight="532.0" fitWidth="900.0" layoutX="1.0" mouseTransparent="true" pickOnBounds="true">
-               <image>
-                  <Image url="@../images/trackT2.jpg" />
-               </image>
-            </ImageView>
-              <GridPane alignment="center" hgap="15.0" minHeight="550.0" minWidth="900.0" vgap="15.0">
-               <children>
-                  <GridPane blendMode="HARD_LIGHT" onMouseClicked="#goToHorseSelection1" style="-fx-border-color: #1C1C1C;">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
+        <Pane>
+            <children>
+                <ImageView cache="true" fitHeight="532.0" fitWidth="900.0" layoutX="1.0" mouseTransparent="true" pickOnBounds="true">
+                    <image>
+                        <Image url="@../images/trackT2.jpg" />
+                    </image>
+                </ImageView>
+                <GridPane alignment="center" hgap="15.0" minHeight="550.0" minWidth="900.0" vgap="15.0">
+                    <children>
+                        <GridPane blendMode="HARD_LIGHT" onMouseClicked="#goToHorseSelection1" style="-fx-border-color: #1C1C1C;">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label />
+                                <Label contentDisplay="CENTER" prefHeight="53.0" prefWidth="72.0" text="Race">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Your Bet:" GridPane.rowIndex="1">
+                                    <padding>
+                                        <Insets left="15.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="Beginning:" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="One" textOverrun="CLIP" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="100" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="11:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </children>
+                        </GridPane>
+                        <GridPane onMouseClicked="#goToHorseSelection2" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Race">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Two" GridPane.columnIndex="1">
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Your Bet:" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="200" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="Beginning:" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="12:30" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                                </Label>
+                            </children>
+                        </GridPane>
+                        <GridPane onMouseClicked="#goToHorseSelection3" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="2">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Race">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Three" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Your Bet:" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="300" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="Beginning:" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="13:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </children>
+                        </GridPane>
+                        <GridPane onMouseClicked="#goToHorseSelection4" style="-fx-border-color: #1C1C1C;" GridPane.rowIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Your Bet:" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="Race">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Four" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="400" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="Beginning:" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="14:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </children>
+                        </GridPane>
+                        <GridPane onMouseClicked="#goToHorseSelection5" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label prefHeight="21.0" prefWidth="119.0" text="500" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="Race">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Five" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Your Bet:" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="Beginning:" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="14:15" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </children>
+                        </GridPane>
+                        <GridPane onMouseClicked="#goToHorseSelection6" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Beginning:" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="Race">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Six" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Your Bet:" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="600" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="14:45" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </children>
+                        </GridPane>
+                        <GridPane onMouseClicked="#goToHorseSelection7" style="-fx-border-color: #1C1C1C;" GridPane.rowIndex="2">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Race">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Seven" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Your Bet:" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="700" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="Beginning:" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="15:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </children>
+                        </GridPane>
+                        <GridPane onMouseClicked="#goToHorseSelection8" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="16:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Label text="Race">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Eight" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Your Bet:" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label text="800" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="Beginning:" GridPane.rowIndex="2">
+                                    <GridPane.margin>
+                                        <Insets left="15.0" />
+                                    </GridPane.margin>
+                                </Label>
+                            </children>
+                        </GridPane>
+                        <GridPane onMouseClicked="#goToHorseSelection9" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Race">
+                                    <padding>
+                                        <Insets left="15.0" />
+                                    </padding>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Nine" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Your Bet:" GridPane.rowIndex="1">
+                                    <padding>
+                                        <Insets left="15.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="900" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="Label" GridPane.rowIndex="2">
+                                    <padding>
+                                        <Insets left="15.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="16:30" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </children>
+                        </GridPane>
+                    </children>
                     <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="140.0" minHeight="140.0" prefHeight="140.0" />
+                        <RowConstraints maxHeight="140.0" minHeight="140.0" prefHeight="140.0" />
+                        <RowConstraints maxHeight="140.0" minHeight="140.0" prefHeight="140.0" />
                     </rowConstraints>
-                     <children>
-                        <Label />
-                        <Label contentDisplay="CENTER" prefHeight="53.0" prefWidth="72.0" text="Race">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Your Bet:" GridPane.rowIndex="1">
-                           <padding>
-                              <Insets left="15.0" />
-                           </padding>
-                        </Label>
-                        <Label text="Beginning:" GridPane.rowIndex="2">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="One" textOverrun="CLIP" GridPane.columnIndex="1">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="100" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="11:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                     </children>
-                  </GridPane>
-                  <GridPane onMouseClicked="#goToHorseSelection2" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="1">
                     <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+                        <ColumnConstraints maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+                        <ColumnConstraints maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
                     </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <Label text="Race">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Two" GridPane.columnIndex="1">
-                           <GridPane.margin>
-                              <Insets />
-                           </GridPane.margin>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Your Bet:" GridPane.rowIndex="1">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="200" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                           <GridPane.margin>
-                              <Insets />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="Beginning:" GridPane.rowIndex="2">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="12:30" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                           <GridPane.margin>
-                              <Insets />
-                           </GridPane.margin>
-                        </Label>
-                     </children>
-                  </GridPane>
-                  <GridPane onMouseClicked="#goToHorseSelection3" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="2">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <Label text="Race">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Three" GridPane.columnIndex="1">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Your Bet:" GridPane.rowIndex="1">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="300" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="Beginning:" GridPane.rowIndex="2">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="13:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                     </children>
-                  </GridPane>
-                  <GridPane onMouseClicked="#goToHorseSelection4" style="-fx-border-color: #1C1C1C;" GridPane.rowIndex="1">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <Label text="Your Bet:" GridPane.rowIndex="1">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="Race">
-                            <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Four" GridPane.columnIndex="1">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="400" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="Beginning:" GridPane.rowIndex="2">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="14:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                     </children>
-                  </GridPane>
-                  <GridPane onMouseClicked="#goToHorseSelection5" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <Label prefHeight="21.0" prefWidth="119.0" text="500" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="Race">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Five" GridPane.columnIndex="1">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Your Bet:" GridPane.rowIndex="1">
-                            <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="Beginning:" GridPane.rowIndex="2">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="14:15" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                     </children>
-                  </GridPane>
-                  <GridPane onMouseClicked="#goToHorseSelection6" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="2" GridPane.rowIndex="1">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <Label text="Beginning:" GridPane.rowIndex="2">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="Race">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Six" GridPane.columnIndex="1">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Your Bet:" GridPane.rowIndex="1">
-                           <GridPane.margin>
-                                 <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="600" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="14:45" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                     </children>
-                  </GridPane>
-                  <GridPane onMouseClicked="#goToHorseSelection7" style="-fx-border-color: #1C1C1C;" GridPane.rowIndex="2">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <Label text="Race">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Seven" GridPane.columnIndex="1">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Your Bet:" GridPane.rowIndex="1">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="700" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="Beginning:" GridPane.rowIndex="2">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                            <Label text="15:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                     </children>
-                  </GridPane>
-                  <GridPane onMouseClicked="#goToHorseSelection8" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <Label text="16:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label text="Race">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Eight" GridPane.columnIndex="1">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Your Bet:" GridPane.rowIndex="1">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                        <Label text="800" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="Beginning:" GridPane.rowIndex="2">
-                           <GridPane.margin>
-                              <Insets left="15.0" />
-                           </GridPane.margin>
-                        </Label>
-                     </children>
-                  </GridPane>
-                  <GridPane onMouseClicked="#goToHorseSelection9" style="-fx-border-color: #1C1C1C;" GridPane.columnIndex="2" GridPane.rowIndex="2">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <Label text="Race">
-                           <padding>
-                              <Insets left="15.0" />
-                           </padding>
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Nine" GridPane.columnIndex="1">
-                           <font>
-                              <Font name="System Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label text="Your Bet:" GridPane.rowIndex="1">
-                           <padding>
-                              <Insets left="15.0" />
-                           </padding>
-                        </Label>
-                        <Label text="900" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="Label" GridPane.rowIndex="2">
-                           <padding>
-                              <Insets left="15.0" />
-                           </padding>
-                        </Label>
-                        <Label text="16:30" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                     </children>
-                  </GridPane>
-               </children>
-               <rowConstraints>
-                  <RowConstraints maxHeight="140.0" minHeight="140.0" prefHeight="140.0" />
-                  <RowConstraints maxHeight="140.0" minHeight="140.0" prefHeight="140.0" />
-                  <RowConstraints maxHeight="140.0" minHeight="140.0" prefHeight="140.0" />
-               </rowConstraints>
-               <columnConstraints>
-                  <ColumnConstraints maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
-                  <ColumnConstraints maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
-                  <ColumnConstraints maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
-               </columnConstraints>
-            </GridPane>
-         </children>
-      </Pane>
+                </GridPane>
+            </children>
+        </Pane>
     </center>
     <top>
         <HBox prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #F6E3CE;" BorderPane.alignment="CENTER_LEFT">
@@ -411,37 +411,37 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </padding>
                 </Label>
-            <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goToRaceSelection" pickOnBounds="true" preserveRatio="true">
-               <HBox.margin>
-                  <Insets bottom="10.0" left="375.0" right="10.0" top="12.0" />
-               </HBox.margin>
-               <image>
-                  <Image url="@../images/home.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#goToBank" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/Bank_money.png" />
-               </image>
-               <HBox.margin>
-                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-               </HBox.margin>
-            </ImageView>
-            <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#goToStats" pickOnBounds="true" preserveRatio="true">
-               <HBox.margin>
-                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-               </HBox.margin>
-               <image>
-                  <Image url="@../images/ranking_list.png" />
-               </image>
-            </ImageView>
+                <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goToRaceSelection" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="375.0" right="10.0" top="12.0" />
+                    </HBox.margin>
+                    <image>
+                        <Image url="@../images/home.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#goToBank" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/Bank_money.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#goToStats" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                    <image>
+                        <Image url="@../images/ranking_list.png" />
+                    </image>
+                </ImageView>
                 <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#goToSettings" pickOnBounds="true" smooth="false">
                     <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </HBox.margin>
-               <image>
-                  <Image url="@../images/Configuration.png" />
-               </image>
+                    <image>
+                        <Image url="@../images/Configuration.png" />
+                    </image>
                 </ImageView>
             </children></HBox>
     </top>
