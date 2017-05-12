@@ -18,7 +18,7 @@
             <children>
                 <ImageView cache="true" fitHeight="532.0" fitWidth="900.0" layoutX="1.0" mouseTransparent="true" pickOnBounds="true">
                     <image>
-                        <Image url="@../images/trackT2.jpg" />
+                        <Image url="@../images/track3.jpg" />
                     </image>
                 </ImageView>
                 <GridPane alignment="center" hgap="15.0" minHeight="550.0" minWidth="900.0" vgap="15.0">
@@ -35,7 +35,7 @@
                             </rowConstraints>
                             <children>
                                 <Label />
-                                <Label contentDisplay="CENTER" prefHeight="53.0" prefWidth="72.0" text="Race">
+                                <Label contentDisplay="CENTER" prefHeight="46.0" prefWidth="103.0" text="Race One" GridPane.columnSpan="2">
                                     <GridPane.margin>
                                         <Insets left="15.0" />
                                     </GridPane.margin>
@@ -53,7 +53,7 @@
                                         <Insets left="15.0" />
                                     </GridPane.margin>
                                 </Label>
-                                <Label text="One" textOverrun="CLIP" GridPane.columnIndex="1">
+                                <Label textOverrun="CLIP" GridPane.columnIndex="1">
                                     <font>
                                         <Font name="System Bold" size="18.0" />
                                     </font>
@@ -73,7 +73,7 @@
                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Label text="Race">
+                                <Label text="Race Two">
                                     <GridPane.margin>
                                         <Insets left="15.0" />
                                     </GridPane.margin>
@@ -81,7 +81,7 @@
                                         <Font name="System Bold" size="18.0" />
                                     </font>
                                 </Label>
-                                <Label text="Two" GridPane.columnIndex="1">
+                                <Label GridPane.columnIndex="1">
                                     <GridPane.margin>
                                         <Insets />
                                     </GridPane.margin>
@@ -122,7 +122,7 @@
                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Label text="Race">
+                                <Label prefHeight="27.0" prefWidth="122.0" text="Race Three" GridPane.columnSpan="2">
                                     <GridPane.margin>
                                         <Insets left="15.0" />
                                     </GridPane.margin>
@@ -130,7 +130,7 @@
                                         <Font name="System Bold" size="18.0" />
                                     </font>
                                 </Label>
-                                <Label text="Three" GridPane.columnIndex="1">
+                                <Label GridPane.columnIndex="1">
                                     <font>
                                         <Font name="System Bold" size="18.0" />
                                     </font>
@@ -165,7 +165,7 @@
                                         <Insets left="15.0" />
                                     </GridPane.margin>
                                 </Label>
-                                <Label text="Race">
+                                <Label text="Race Four">
                                     <GridPane.margin>
                                         <Insets left="15.0" />
                                     </GridPane.margin>
@@ -173,7 +173,7 @@
                                         <Font name="System Bold" size="18.0" />
                                     </font>
                                 </Label>
-                                <Label text="Four" GridPane.columnIndex="1">
+                                <Label GridPane.columnIndex="1">
                                     <font>
                                         <Font name="System Bold" size="18.0" />
                                     </font>
@@ -199,7 +199,7 @@
                             </rowConstraints>
                             <children>
                                 <Label prefHeight="21.0" prefWidth="119.0" text="500" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                <Label text="Race">
+                                <Label text="Race Five">
                                     <GridPane.margin>
                                         <Insets left="15.0" />
                                     </GridPane.margin>
@@ -207,7 +207,7 @@
                                         <Font name="System Bold" size="18.0" />
                                     </font>
                                 </Label>
-                                <Label text="Five" GridPane.columnIndex="1">
+                                <Label GridPane.columnIndex="1">
                                     <font>
                                         <Font name="System Bold" size="18.0" />
                                     </font>
@@ -241,7 +241,7 @@
                                         <Insets left="15.0" />
                                     </GridPane.margin>
                                 </Label>
-                                <Label text="Race">
+                                <Label text="Race Six">
                                     <GridPane.margin>
                                         <Insets left="15.0" />
                                     </GridPane.margin>
@@ -249,7 +249,7 @@
                                         <Font name="System Bold" size="18.0" />
                                     </font>
                                 </Label>
-                                <Label text="Six" GridPane.columnIndex="1">
+                                <Label GridPane.columnIndex="1">
                                     <font>
                                         <Font name="System Bold" size="18.0" />
                                     </font>
@@ -274,7 +274,7 @@
                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Label text="Race">
+                                <Label text="Race Seven" GridPane.columnSpan="2">
                                     <GridPane.margin>
                                         <Insets left="15.0" />
                                     </GridPane.margin>
@@ -282,7 +282,7 @@
                                         <Font name="System Bold" size="18.0" />
                                     </font>
                                 </Label>
-                                <Label text="Seven" GridPane.columnIndex="1">
+                                <Label GridPane.columnIndex="1">
                                     <font>
                                         <Font name="System Bold" size="18.0" />
                                     </font>
@@ -313,7 +313,7 @@
                             </rowConstraints>
                             <children>
                                 <Label text="16:00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                <Label text="Race">
+                                <Label prefHeight="27.0" prefWidth="145.0" text="Race Eight" GridPane.columnSpan="2">
                                     <GridPane.margin>
                                         <Insets left="15.0" />
                                     </GridPane.margin>
@@ -321,7 +321,7 @@
                                         <Font name="System Bold" size="18.0" />
                                     </font>
                                 </Label>
-                                <Label text="Eight" GridPane.columnIndex="1">
+                                <Label GridPane.columnIndex="1">
                                     <font>
                                         <Font name="System Bold" size="18.0" />
                                     </font>
@@ -350,7 +350,7 @@
                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Label text="Race">
+                                <Label prefHeight="27.0" prefWidth="168.0" text="Race Nine" GridPane.columnSpan="2">
                                     <padding>
                                         <Insets left="15.0" />
                                     </padding>
@@ -358,7 +358,7 @@
                                         <Font name="System Bold" size="18.0" />
                                     </font>
                                 </Label>
-                                <Label text="Nine" GridPane.columnIndex="1">
+                                <Label GridPane.columnIndex="1">
                                     <font>
                                         <Font name="System Bold" size="18.0" />
                                     </font>
@@ -369,7 +369,7 @@
                                     </padding>
                                 </Label>
                                 <Label text="900" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                <Label text="Label" GridPane.rowIndex="2">
+                                <Label text="Beginning:" GridPane.rowIndex="2">
                                     <padding>
                                         <Insets left="15.0" />
                                     </padding>
