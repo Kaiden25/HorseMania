@@ -22,7 +22,7 @@
                         <Rectangle2D />
                      </viewport>
                      <image>
-                        <Image url="@../images/Splashscreen.png" />
+                        <Image url="@../images/Splashscreen3.png" />
                      </image>
                   </ImageView>
                   <Pane onMouseClicked="#goToRaceSelection" opacity="0.0" prefHeight="600.0" prefWidth="900.0" />
