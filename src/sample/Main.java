@@ -223,6 +223,8 @@ public class Main extends Application {
             addStats("Bet lost", "- " + String.valueOf(wager));
             JOptionPane.showMessageDialog(null, "The Horse you selected has lost", "Your Horse lost", JOptionPane.INFORMATION_MESSAGE);
         }
+        //Adds a little bit of money to the bank. (Positive interest)
+        moneyOnBank = moneyOnBank * 105 / 100;
         goToRaceSelection(null);
     }
 
