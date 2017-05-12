@@ -20,9 +20,9 @@ import java.io.File;
  * Serves as the Controller for the whole application.
  * **/
 public class Main extends Application {
+    /*Opens startscreen / splashscreen and sets variables*/
     @Override
     public void start(Stage primaryStage) throws Exception{
-       // Parent root = FXMLLoader.load(getClass().getResource("start.fxml"));
         Parent root = FXMLLoader.load(getClass().getResource("start.fxml"));
         primaryStage.setTitle("Horse Simulator");
         primaryStage.setScene(new Scene(root, 900, 600));
@@ -49,14 +49,15 @@ public class Main extends Application {
     @FXML private Label statsLabel1;
     @FXML private Label statsLabel2;
 
-
+    /*Main method*/
     public static void main(String[] args) {
         launch(args);
     }
 
     /*Functions*/
+
     @FXML
-    /*this sets race_selection as current scene*/
+    /*This sets race_selection as current scene*/
     public void goToRaceSelection(Event arg0) {
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("race_selection.fxml")), 900, 600));
@@ -67,7 +68,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets horse_selection as current scene and deduces your wager from current money*/
+    /*This sets horse_selection as current scene and deduces your wager from current money*/
     public void goToHorseSelection1(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(100);
@@ -78,7 +79,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets horse_selection as current scene and deduces your wager from current money*/
+    /*This sets horse_selection as current scene and deduces your wager from current money*/
     public void goToHorseSelection2(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(200);
@@ -89,7 +90,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets horse_selection as current scene and deduces your wager from current money*/
+    /*This sets horse_selection as current scene and deduces your wager from current money*/
     public void goToHorseSelection3(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(300);
@@ -100,7 +101,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets horse_selection as current scene and deduces your wager from current money*/
+    /*This sets horse_selection as current scene and deduces your wager from current money*/
     public void goToHorseSelection4(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(400);
@@ -111,7 +112,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets horse_selection as current scene and deduces your wager from current money*/
+    /*This sets horse_selection as current scene and deduces your wager from current money*/
     public void goToHorseSelection5(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(500);
@@ -122,7 +123,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets horse_selection as current scene and deduces your wager from current money*/
+    /*This sets horse_selection as current scene and deduces your wager from current money*/
     public void goToHorseSelection6(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(600);
@@ -135,7 +136,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets horse_selection as current scene and deduces your wager from current money*/
+    /*This sets horse_selection as current scene and deduces your wager from current money*/
     public void goToHorseSelection7(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(700);
@@ -146,7 +147,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets horse_selection as current scene and deduces your wager from current money*/
+    /*This sets horse_selection as current scene and deduces your wager from current money*/
     public void goToHorseSelection8(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(800);
@@ -157,7 +158,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets horse_selection as current scene and deduces your wager from current money*/
+    /*This sets horse_selection as current scene and deduces your wager from current money*/
     public void goToHorseSelection9(Event arg0) {
         // set the wager to the race corrresponding amount
         setWager(900);
@@ -168,7 +169,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets settings as current scene*/
+    /*This sets settings as current scene*/
     public void goToSettings(Event arg0) {
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("settings.fxml")), 900, 600));
@@ -179,7 +180,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets bank as current scene*/
+    /*This sets bank as current scene*/
     public void goToBank(Event arg0) {
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("bank.fxml")), 900, 600));
@@ -190,7 +191,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this sets settings as current scene*/
+    /*This sets settings as current scene*/
     public void goToStats(Event arg0) {
         try{
             PrimaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("statistic.fxml")), 900, 600));
@@ -201,7 +202,9 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this gets which horse you selected and evaluetes wether or not you won your wager, in case of wining it adds the payout of your wager to your current money */
+    /*This method is used when a horse gets selected
+    * This method evaluates if the selected horse has won, adds money horse has won,
+    * and sets the current scene back to the race_selection*/
     public void selectHorse(Event arg0){
         // Get a random number between 1 and 100
         int random = (int)(Math.random()*100);
@@ -219,25 +222,26 @@ public class Main extends Application {
             wager = 0;
         }
         else{
-            //messsage on loss
+            //Message on loss
             addStats("Bet lost", "- " + String.valueOf(wager));
             JOptionPane.showMessageDialog(null, "The Horse you selected has lost", "Your Horse lost", JOptionPane.INFORMATION_MESSAGE);
         }
         //Adds a little bit of money to the bank. (Positive interest)
         moneyOnBank = moneyOnBank * 105 / 100;
+        //Sets scene to race_selection
         goToRaceSelection(null);
     }
 
     @FXML
-    /*this method deposites the entered amount into bank*/
+    /*This method deposites the entered amount into bank*/
     public void depositMoney(Event arg0){
         try {
             Integer i = Integer.parseInt(moneyToDeposit.getText());
             if(currentMoney < i)
-                //message if you try to deposite more than you own
+                //Message if you try to deposite more than you own
                 JOptionPane.showMessageDialog(null, "Sorry, but you don't have that much money to deposit...", "You don't have that much money", JOptionPane.INFORMATION_MESSAGE);
             else{
-                //the deposit calculation and massage on successful deposit
+                //The deposit calculation and massage on successful deposit
                 moneyOnBank = moneyOnBank + i;
                 currentMoney = currentMoney - i;
                 currentMoneyLabel.setText(String.valueOf(currentMoney));
@@ -246,21 +250,21 @@ public class Main extends Application {
             }
         }
         catch (Exception ex){
-            //message if you deposit without entering a value
+            //Message if you deposit without entering a value
             JOptionPane.showMessageDialog(null, "Please just enter full numbers", "Incorrect input", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
     @FXML
-    /*this method withdraws the entered amount into bank*/
+    /*This method withdraws the entered amount into bank*/
     public void withdrawMoney(Event arg0){
         try {
             Integer i = Integer.parseInt(moneyToDeposit.getText());
             if(moneyOnBank < i)
-                //message if you try to withdraw more than you own
+                //Message if you try to withdraw more than you own
                 JOptionPane.showMessageDialog(null, "Sorry, but you don't have that much money to withdraw...", "You don't have that much money", JOptionPane.INFORMATION_MESSAGE);
             else{
-                //the withdrawal calculation and massage on successful deposit
+                //The withdrawal calculation and massage on successful deposit
                 currentMoney = currentMoney + i;
                 moneyOnBank = moneyOnBank - i;
                 currentMoneyLabel.setText(String.valueOf(currentMoney));
@@ -274,7 +278,7 @@ public class Main extends Application {
     }
 
     @FXML
-    /*this method initializes current money, money in bank and the coresponding labels*/
+    /*This method initializes current money, money in bank and the corresponding labels*/
     private void initialize(){
         if(currentMoneyLabel != null)
             currentMoneyLabel.setText(String.valueOf(currentMoney));
@@ -287,13 +291,15 @@ public class Main extends Application {
             statsLabel2.setText(stats2);
     }
 
-    //this methode adds the stats to statistic
+    //This method adds the stats to the statistic
     private void addStats(String key, String value){
         stats1 = stats1 + "\n" + key;
         stats2 = stats2 + "\n" + value;
     }
 
-    //this method plays music
+    /*This method plays music
+    * Not implemented right now, but can be implemented if wished
+    * Currently just an idea*/
     private void playMusic(){
         File f = new File("Soundtrack/Theme.mp3");
         if(f.exists()){
@@ -303,9 +309,10 @@ public class Main extends Application {
         }
     }
 
-    //this setter sets wager
+    /* This setter sets wager */
     public void setWager(int wager) {
         this.wager = wager;
+        //Removes current wager / bet from money
         currentMoney = currentMoney - wager;
     }
 }
